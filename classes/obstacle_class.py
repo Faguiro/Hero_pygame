@@ -36,7 +36,7 @@ class Monster(pygame.sprite.Sprite):
     def update(self):
         #print(self.rect.x)
         self.animation_state() 
-        self.rect.x -= 6
+        self.rect.x -= 2
         self.destroy()
     def destroy(self):
         if self.rect.x <= -100:

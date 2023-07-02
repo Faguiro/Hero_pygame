@@ -32,7 +32,7 @@ class Hero(pygame.sprite.Sprite):
         self.rect.y += self.gravity
         if self.rect.bottom >= 500:
             self.rect.bottom = 500            
-    def animation_tate(self):     
+    def animation_state(self):     
         if self.rect.bottom < 500:
             self.image = self.hero_jump
         else:
@@ -43,5 +43,5 @@ class Hero(pygame.sprite.Sprite):
     def update(self):
         self.hero_input()
         self.aply_gravity()
-        self.animation_tate()
+        self.animation_state()
   
